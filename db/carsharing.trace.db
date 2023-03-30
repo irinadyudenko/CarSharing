@@ -1,0 +1,17 @@
+2023-03-10 19:12:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INT,  NAME VARCHAR(255),  PRIMARY KEY ( ID )) [42101-200]
+2023-03-10 19:15:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INT,  NAME VARCHAR(255),  PRIMARY KEY ( ID )) [42101-200]
+2023-03-10 19:16:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INT,  NAME VARCHAR(255),  PRIMARY KEY ( ID )) [42101-200]
+2023-03-22 20:11:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" not found; SQL statement:
+DROP TABLE COMPANY; [42102-200]
+2023-03-24 17:27:07 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-200]
+2023-03-29 21:28:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE CUSTOMER,[*] CAR SET CUSTOMER.RENTED_CAR_ID = NULL, CAR.IS_RENTED = FALSE WHERE CUSTOMER.ID = 1 AND CAR.ID = CUSTOMER.RENTED_CAR_ID;"; expected "., AS, SET"; SQL statement:
+UPDATE Customer, Car SET Customer.rented_car_id = null, Car.is_rented = false WHERE Customer.id = 1 and Car.id = Customer.rented_car_id; [42001-200]
